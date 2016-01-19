@@ -11,6 +11,9 @@ body {
   margin: auto;
   width: 545px;
   height: 545px;
+  background: url("me.jpg") no-repeat;
+  background-size: 80%;
+  background-position: center;
 }
 
 ul {
