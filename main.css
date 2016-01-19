@@ -91,10 +91,11 @@ li:nth-child(3n+3) {
   position: absolute;
   bottom: 0;
   left: 0;
+  transform: rotate3d(0,0,1,180deg);
 }
 
 #left li {
-  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 /* Animations */
