@@ -26,6 +26,7 @@ li {
   background: radial-gradient(ellipse at center, rgba(254,252,200,0.5) 30%,rgba(255,255,150,0.8) 99%,rgba(241,218,54,0.8) 100%);
   border-radius: 50%;
   position: relative;
+  animation: light 1s infinite;
 }
 
 li::before {
@@ -40,9 +41,8 @@ li::before {
   right: 6px;
 }
 
-li:nth-child(3) {
-  box-shadow: 0px 0px 40px 10px rgba(255, 255, 190, 0.9),
-  0px 0px 40px 12px rgba(255, 255, 220, 0.9) inset;
+li:nth-child(1) {
+
 }
 
 #top {
@@ -85,4 +85,17 @@ li:nth-child(3) {
 
 #left li {
   margin-top: 5px;
+}
+
+/* Animations */
+
+@keyframes light {
+  0% {
+    box-shadow: 0px 0px 40px 10px rgba(255, 255, 190, 0.9),
+    0px 0px 40px 12px rgba(255, 255, 220, 0.9) inset;
+  }
+  100% {
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 190, 0),
+    0px 0px 0px 0px rgba(255, 255, 220, 0) inset;
+  }
 }
