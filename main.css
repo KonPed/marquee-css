@@ -26,7 +26,7 @@ li {
   background: radial-gradient(ellipse at center, rgba(254,252,200,0.5) 30%,rgba(255,255,150,0.8) 99%,rgba(241,218,54,0.8) 100%);
   border-radius: 50%;
   position: relative;
-  animation: light 1s infinite;
+  animation: light 3s infinite;
 }
 
 li::before {
@@ -41,8 +41,12 @@ li::before {
   right: 6px;
 }
 
-li:nth-child(1) {
+li:nth-child(3n+2) {
+  animation-delay: 1s;
+}
 
+li:nth-child(3n+3) {
+  animation-delay: 2s;
 }
 
 #top {
